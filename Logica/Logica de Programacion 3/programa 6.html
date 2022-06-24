@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>programa 6</title>
+</head>
+<body>
+	<canvas width="600" height="400"></canvas>
+
+	<script type="text/javascript">
+		
+		var pantalla = document.querySelector("canvas");
+		var pincel = pantalla.getContext("2d");
+		var x;
+		var y;
+		var radio = 20;
+
+		pincel.fillStyle = "lightgrey";
+		pincel.fillRect(0,0,600,400);
+
+		function circunferencia(x,y,radio,color){
+			pincel.fillStyle = color;
+			pincel.beginPath();
+			pincel.arc(x,y,radio,2*3,14);
+			pincel.fill();
+		}
+
+		function limpiar(){
+			pincel.clearRect(0,0,600,400);
+		}
+
+		function aro(x,y){
+			circunferencia(x,y,radio+40,"red");
+			circunferencia(x,y,radio+20,"white");
+			circunferencia(x,y,radio,"red");
+		}
+
+		function ruleta(numero){
+		  return Math.floor(Math.random()*numero);
+		}
+		
+
+		function tiro(){
+			x = ruleta(600);
+			y = ruleta(400);
+			limpiar();
+			aro(x,y);
+
+		}
+		setInterval(tiro,1000);
+
+		function juego(evento){
+
+			var xp = evento.pageX - pantalla.offsetLeft;
+			var yp = evento.pageY - pantalla.offsetTop;
+
+			if( (xp < x + radio) &&
+				(xp > x - radio) &&
+				(yp < y + radio) &&
+				(yp > y - radio) ){
+				alert("acerto");
+			}
+		}
+
+		
+		pantalla.onclick = juego;
+
+		
+		
+
+	</script>
+
+</body>
+</html>

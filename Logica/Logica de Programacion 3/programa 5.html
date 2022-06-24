@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>programa 5</title>
+</head>
+<body>
+	<canvas width="600" height="400"></canvas>
+
+	<script type="text/javascript">
+		
+		var pantalla = document.querySelector("canvas");
+		var pincel = pantalla.getContext("2d");
+
+		pincel.fillStyle = "lightgrey";
+		pincel.fillRect(0,0,600,400);
+
+		function circunferencia(x,y,radio){
+			pincel.fillStyle = "red";
+			pincel.beginPath();
+			pincel.arc(x,y,radio,2*3,14);
+			pincel.fill();
+		}
+
+		function limpiar(){
+			pincel.clearRect(0,0,600,400);
+		}
+
+		var x;
+		var y;
+
+		function pantallita(){
+
+			limpiar();
+			circunferencia(x,y,30);
+			x =Math.round(Math.random()*530+40);
+			y = Math.round(Math.random()*330+40);
+		}
+
+		setInterval(pantallita,400);
+
+	</script>
+
+</body>
+</html>

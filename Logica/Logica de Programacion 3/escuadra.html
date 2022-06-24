@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>escuadra</title>
+</head>
+<body>
+
+	<canvas width="1000" height="1000"></canvas>
+
+	<script type="text/javascript"> 
+
+		var pantalla = document.querySelector("canvas");
+		var pincel = pantalla.getContext("2d");
+
+		//triangulo negro
+		pincel.fillStyle = "black";
+		pincel.beginPath();
+		pincel.moveTo(50,50);
+		pincel.lineTo(50,400);
+		pincel.lineTo(400,400);
+		pincel.fill();
+
+		//triangulo blanco
+		pincel.fillStyle = "white";
+		pincel.beginPath();
+		pincel.moveTo(100,350);
+		pincel.lineTo(100,175);
+		pincel.lineTo(275,350);
+		pincel.fill();
+
+	</script>
+
+</body>
+</html>

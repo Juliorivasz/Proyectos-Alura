@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Programa</title>
+</head>
+
+<body>
+
+	<canvas width="600" height="400"></canvas>
+
+	<script type="text/javascript">
+
+		var pantalla = document.querySelector("canvas");
+		var pincel = pantalla.getContext("2d");
+
+		pincel.fillStyle = "yellow";
+		pincel.fillRect(0,0,600,133);
+
+		pincel.fillStyle = "blue";
+		pincel.fillRect(0,133,600,133);
+
+		pincel.fillStyle = "red";
+		pincel.fillRect(0,266,600,133);
+		
+		pincel.fillStyle = "white";
+		pincel.beginPath();
+		pincel.moveTo();
+		pincel.lineTo();
+		pincel.lineTo()
+		pincel.fill();
+
+
+	</script>
+
+
+
+
+
+
+
+</body>
+</html>
