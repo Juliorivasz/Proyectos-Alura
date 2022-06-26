@@ -1,51 +1,194 @@
-.titulo{
-	padding-left: 30px;
+.header{
+    background-color: #bbbbbb;
+    padding: 20px 0;
+    
 }
 
-#bn{
-	width: 100%;
+.barra{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
 }
 
-.principal{
-	background: #cccccc;
-	padding: 20px;
+nav{
+    position: absolute;
+    top: 125px;
+    right: 0;    
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #c78c19;
+    text-decoration: underline;
+}
+
+.productos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.productos li:hover h2{
+    font-size: 33px;
+}
+
+.productos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.productos li:hover{
+    border-color: #c78c19;
+}
+.productos li:active{
+    border-color: #088c19;
+}
+
+.descripcion{
+    font-size: 18px;
+}
+
+.precio{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copy{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padre, form textarea{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox{
+    margin: 20px 0;
+}
+
+select {
+    padding: 2px 15px;
+    font-size: 15px;
+}
+
+#enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+#enviar:hover{
+    background: darkorange;
+    transform: scale(1.1);
+}
+
+table{
+    margin: 40px 40px;
+}
+
+thead{
+    background: #555555;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+td,th{
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+tfoot{
+    font-weight: bold;
+    color: #ff0000;
+}
+/*ccs para el home*/
+.bn{
+    width: 100%;
+
 }
 
 .subtitulos{
-	text-align: center;
+    text-align: center;
+    font-size: 2em;
+    clear: left;
 }
 
-p{
- 	text-align: center;
+.principal p{
+    margin: 0 0 1em;
 }
 
-em strong{
-	color: #ff0000;
+.principal em{
+    font-style: italic;
 }
 
-#mision{
-	font-size: 20px;
+.principal strong{
+    font-weight: bold;
 }
 
-.diferenciales{
-	background: #ffffff;
-	padding: 30px;
+.utensilio{
+    width: 120px;
+    float: left;
+    margin: 0 20px 20px 0;
 }
 
-.lista{
-	font-style: italic;
-}
-
-ul{
-	display: inline-block;
-	vertical-align: top;
-	width: 29%;
-	margin-right: 15%;
-}
-
-#di{
-
-	width: 50%;
-
+.imgdiferencial{
+    width: 60%;
 }
 
