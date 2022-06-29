@@ -256,3 +256,20 @@ tfoot{
     margin: 1em auto;
 }
 
+@media screen and (max-width:480px) {
+    h1{
+        text-align: center;
+    }
+
+    nav{
+        position: static;
+    }
+
+    .caracteristicas, .imgdiferencial{
+        margin: 5% 0;
+        width: 100%;
+    }
+    .barra, .productos, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+        width: auto;
+    } 
+}
