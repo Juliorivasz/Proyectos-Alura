@@ -1,2 +1,2 @@
 # Proyectos-Alura
-Programas realizados y con posibles mejoras
+Programas realizados a lo largo del curso con posibles mejoras
